@@ -1,0 +1,23 @@
+﻿@model Card
+
+    <!--Turned into Draw5 out of convenience-->
+
+    <table cellspacing="5" cellpadding="3">
+    <tr>
+        @{ foreach (Hand h in Model.cards)
+            {
+                <td>
+                    <p>@h.value of @h.suit</p>
+                    <img src="@h.image" width="100" height="100" />
+                </td>
+            }
+        }
+    </tr>
+    </table>
+
+
+
+
+
+
+
